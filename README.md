@@ -11,3 +11,8 @@ Terraform
 Docker
 Kubernetes
 Jenkins
+
+# Student Details
+
+1. ARUN K
+2. 
