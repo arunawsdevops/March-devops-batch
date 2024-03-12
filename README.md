@@ -14,6 +14,5 @@ Jenkins
 
 # Student Details
 
-1. ARUN K
-2. Najiya Nasrin
-3. Christy Mathew 
+1. Najiya Nasrin
+2. Christy Mathew 
