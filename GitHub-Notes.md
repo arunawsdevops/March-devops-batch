@@ -60,3 +60,7 @@ Branches in Git are independent lines of development that allow you to work on f
 ![alt text](Images/image-7.png)
 
 ![alt text](Images/image-8.png)
+
+- **Delete a Branch:**
+
+![alt text](Images/image-9.png)
