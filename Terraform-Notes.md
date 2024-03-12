@@ -20,13 +20,13 @@ Terraform is an open-source infrastructure as code software tool created by Hash
 
 1. **Provider Block:** Specifies the cloud provider or service used for resource provisioning. Example: `provider "aws" {}`.
 
-Example: ![alt text](images/image.png)
+Example: ![alt text](Images/image.png)
 
 2. **Resource Block:** Defines the infrastructure resources to be provisioned, such as virtual machines, storage buckets, or networking components. Example: `resource "aws_instance" "example" {}`.
 
-Example: ![alt text](images/image-1.png)
+Example: ![alt text](Images/image-1.png)
 
-![alt text](images/image-2.png)
+![alt text](Images/image-2.png)
 
 - `<provider_type>`: Specifies the type of provider that Terraform should use to create the resource. This could be "aws", "azurerm", "google", etc., depending on the cloud provider you're working with.
 
@@ -36,12 +36,12 @@ Example: ![alt text](images/image-1.png)
 
 3. **Variable Block:** The variable block in Terraform is used to declare input variables that are used within your configuration. Variables allow you to parameterize your Terraform configurations, making them more dynamic and reusable across different environments or scenarios.
 
-![alt text](images/image-3.png)
+![alt text](Images/image-3.png)
 
 # Example:
 
 Variable Block
-![alt text](images/image-4.png)
+![alt text](Images/image-4.png)
 
 - **Input Variables:** Used to parameterize Terraform configurations, allowing users to customize deployments based on different environments or requirements.
 
