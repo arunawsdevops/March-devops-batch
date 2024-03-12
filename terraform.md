@@ -33,13 +33,15 @@ Example: ![alt text](image-1.png)
 - `<resource_name>`: This is a local name for the resource block, used to reference the resource within your Terraform configuration.
 
 
-3. **Data Block:** Retrieves information from external sources or existing infrastructure to be used within the Terraform configuration. Example: `data "aws_ami" "example" {}`.
 
-4. **Variable Block:** Declares input variables used within the configuration to make it more dynamic and reusable. Example: `variable "region" {}`.
+3. **Variable Block:** The variable block in Terraform is used to declare input variables that are used within your configuration. Variables allow you to parameterize your Terraform configurations, making them more dynamic and reusable across different environments or scenarios.
 
-5. **Output Block:** Defines values to be exposed after resource provisioning for reference or sharing with other configurations. Example: `output "instance_ip" {}`.
+![alt text](image-3.png)
 
-## Terraform Variables
+# Example:
+
+Variable Block
+![alt text](image-4.png)
 
 - **Input Variables:** Used to parameterize Terraform configurations, allowing users to customize deployments based on different environments or requirements.
 
