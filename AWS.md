@@ -1,4 +1,4 @@
-#  AWS resources I know
+#  AWS Services I have worked:
 1. EC2 - intances ,Security Group
 2. S3 - buckets,bucket policies ,object
 3. IAM - user, group, policies,roles
