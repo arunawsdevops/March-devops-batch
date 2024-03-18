@@ -1,3 +1,3 @@
 locals {
-  staging_env = "staging"
+  staging_env = "stg"
 }
