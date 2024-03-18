@@ -1,14 +1,17 @@
-resource "aws_instance" "ec2_example" {
+resource "aws_vpc" "stg-main" {
+  cidr_block       = "10.0.0.0/16"
 
-   ami                         =  var.ami_id
-   instance_type               =  var.instance_type
-   count                       =  var.instance_count
-   associate_public_ip_address =  var.enable_public_ip
-   
-   tags = var.project_environment
+  tags = {
+    Name = "${local.staging_env} -vpc"
+  }
 }
 
-resource "aws_iam_user" "example" {
-  count = length(var.user_names)
-  name  = var.user_names[count.index]
+resource "aws_instance" "terra-insta" {
+  
+  ami   = "ami-02d7fd1c2af6eead0"
+  instance_type = t2.micro
+
+    tags = {
+    Name = "${local.staging_env} -EC2"
+  }
 }
