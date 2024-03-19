@@ -1,0 +1,11 @@
+variable "bucket_name" {
+   description = "name of the bucket"
+   type        = string
+   default     = "arun-123-bsoft-test"
+}
+
+variable "user_names" {
+  description = "IAM usernames"
+  type        = list(string)
+  default     = ["user1", "user2", "user3s"]
+}
