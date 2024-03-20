@@ -6,3 +6,8 @@
 4. VPC      - Subnets, Internet Gateway, Route Tables, NAT Gateway, Security Groups.
 5. Route 53 - Records, Domain, Hosted zones, Routing policies.
 6. ECS -    - Cluster, services, Task definition.
+
+# Output:
+
+![ALT TEXT](https://github.com/arunawsdevops/March-devops-batch/tree/feature-Pranav/images/terra.JPG)
+
