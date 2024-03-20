@@ -1,13 +1,17 @@
-resource "aws_s3_bucket" "s3hwork" {
-    bucket = var.s3hwork
+resource "aws_vpc" "myvpc" {
+  cidr_block = "10.0.0.0/16"
+  tags = {
+    Name = "${local.staging_env} -vpc"
+
+  }
 }
-resource "aws_instance" "ec2hwork" {
-    ami = "ami-0fe630eb857a6ec83"
-    instance_type = "t2.micro"
-    associate_public_ip_address = true
-    tags = var.ec2name
-}
-resource "aws_sns_topic" "snshwork" {
-    name = "hworksnstopic"
+
+resource "aws_instance" "my-ec2" {
+  ami = var.myami
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "${local.staging.env} -ec2"
+  }
   
 }
