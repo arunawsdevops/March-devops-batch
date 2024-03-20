@@ -9,5 +9,5 @@
 
 # Output:
 
-![ALT TEXT](https://github.com/arunawsdevops/March-devops-batch/tree/feature-Pranav/Images/terra.JPG)
+![Output](https://github.com/arunawsdevops/March-devops-batch/tree/feature-Pranav/Images/terra.JPG)
 
