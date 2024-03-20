@@ -1,8 +1,17 @@
-resource "aws_s3_bucket" "bucket-example" {
-  bucket = arun-123-bsoft-test
+resource "aws_vpc" "myvpc" {
+  cidr_block = "10.0.0.0/16"
+  tags = {
+    Name = "${local.staging_env} -vpc"
+
+  }
+}
+
+resource "aws_instance" "my-ec2" {
+  ami = var.myami
+  instance_type = "t2.micro"
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    Name = "${local.staging.env} -ec2"
   }
+  
 }
