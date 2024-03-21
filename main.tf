@@ -1,9 +1,9 @@
-resource "aws_instance" "ec2_example" {
+resource "aws_instance" "ec2_devops" {
 
-   ami                         =  var.ami_id
-   instance_type               =  var.instance_type
-  
-   tags = {
-    Name = local.instance_name
-   }
+ami             = "ami-0c0b74d29acd0cd97"
+instance_type   = "t2.micro"
+
+tags = {
+   Name ="jenkins-server"
+}
 }
