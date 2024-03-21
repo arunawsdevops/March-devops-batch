@@ -26,3 +26,21 @@ variable "project_environment" {
     name      = "Terra-EC2"
   }
 }
+
+variable "bucket_name" {
+  description = "s3 bucket name"
+  type = string
+  }
+
+variable "project_env" {
+  description = "project name and environment"
+  type        = map(string)
+  default     = {
+    name      = "Terra-S3"
+  }
+}
+
+variable "topic_name" {
+  description = "sns topic name"
+  type = string
+}

@@ -9,13 +9,11 @@ resource "aws_instance" "ec2_example" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "terra-dev-mybucket"
+  bucket = var.bucket_name
+  tags = var.project_env
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
 }
+
 resource "aws_s3_bucket_ownership_controls" "example" {
   bucket = aws_s3_bucket.example.id
   rule {
@@ -31,5 +29,5 @@ resource "aws_s3_bucket_acl" "example" {
 }
 
 resource "aws_sns_topic" "user_updates" {
-  name = "terra-updates-mytopic"
+  name = var.topic_name
 }
